@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> vendor prefix </title>
+    <!-- Berikut ini adalah awalan Vendor Prefix pada setiap browser :
+
+-webkit- : Chrome dan Safari
+-moz- : Firefox.
+-o- : Opera.
+-ms- : Internet Explorer.-->
+<style>
+    
+.myBox{
+      width: 100px;
+      height: 100px;
+      padding: 30px;
+      background: linear-gradient(top, red, blue);
+      background: -webkit-linear-gradient(top, red, blue);
+      background: -moz-linear-gradient(top, red, blue);
+      background: -o-linear-gradient(top, red, blue);
+      background: -ms-linear-gradient(top, red, blue);
+   }
+</style>
+</head>
+<!-- Misalnya untuk property background:linear-gradient(top, red, blue);, jika menggunakan Vendor Prefix 
+    akan menjadi seperti ini -webkit-background: linear-gradient(top, red, blue);.-->
+<body>
+    <div class="myBox"></div>
+</body>
+</html>

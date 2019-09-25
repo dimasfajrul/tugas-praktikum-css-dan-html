@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar CSS</title>
+        <!-- Kita membuat perintah tag untuk diakses di body
+        -Maksud dari kode “p strong” adalah seluruh tag <strong> yang berada di
+        dalam tag <p>.
+        -h2.judul diperlukan untuk mencari seluruh tag h2 dengan class judul,
+        sedangkan .paragraf digunakan -->
+        <style type="text/css">
+        h2 , h3{
+        color: blue;
+        }
+       
+        p strong {
+        color:red;
+        }
+        h2.judul , .paragraf {
+        font-style: italic;
+        }
+        #belajar_html, p#belajar_css, h3.subheader {
+        font-size:14pt;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- semua yang ada dibody akan mengeksekusi sesuai peintah pada head tersebut-->
+        <h2 class="judul">Belajar CSS</h2>
+        <p> Ini <strong>adalah</strong> sebuah <em>paragraf</em>
+        </p>
+        <p id="belajar_html" class="paragraf" >Saya sedang belajar
+        HTML dari
+        <a href="http://www.jti.polije.com"
+        target="_blank">Jti.polije</a>
+        akan terbuka pada tab baru</p>
+        <p id="belajar_css" class="paragraf">
+        Saya sedang belajar CSS, mohon jangan diganggu</p>
+        <br />
+        <h3 class="judul subheader">Daftar penjualan</h3>
+        <!-- menggunakan metode List-->
+        <ol>
+             <li><em>Minyak tanah</em></li>
+             <li>Sabun </li>
+             <li>Sikat gigi</li>
+             <li>Shampoo</li>
+             <li>Baju</li>
+        </ol>
+    </body>
+</html>

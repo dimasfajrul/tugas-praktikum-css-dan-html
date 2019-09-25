@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar Membuat Form</title>
+    </head>
+    <body>
+        <form action="= formulir.html" method= "get">
+            <!-- kita masukan nama ,input type text -->
+            Nama: <input type ="text" name="nama" value="Nama kamu"/> 
+            <br/>
+            <!-- kita masukkan Password ,menggunakan type Password supaya orang lain tidak bisa meliahat
+            apa yang kita tulis-->
+            Password: <input type ="password" name = "password" />
+            <br/>
+            <!-- pada Jenis kelamin kita menggunakan type radio supaya bentukan nya bulat pada pilihan yg dipilih
+            jika menggunakan chekbox maka kotak seperti hobi dibawah ini-->
+            Jenis Kelamin :
+                <input type="radio" name="jenis_kelamin" value="laki-laki"
+                checked />
+                Laki - Laki
+                <input type="radio" name="jenis_kelamin" value="perempuan" />
+                Perempuan
+                <br />
+            <!-- kita masukan hobi dengan type checkbox jadi jika kita memencet salah satunya maka akan terceklist -->
+            Hobi : <input type ="checkbox" name ="hobi_baca" /> Membaca Buku
+                   <input type = "checkbox" name="hobi_nulis" checked/>Menulis
+                   <input type="checkbox" name="hobi_mancing"/> Memancing
+                   <br/>
+            <!-- Asal kota kita menggunakan option jadi kita klik maka option nya muncul dibawah -->
+            Asal Kota:
+            <select name="asal_kota">
+                <option value="kota Jakarta">Jakarta</option>
+                <option>Bandung</option>
+                <option value="kota semarang" selected>semarang</option>
+            </select>  
+            <br/>  
+            komentar dong:  
+            <!-- Tag textarea pada dasarnya sama dengan input type text, namun lebih besar
+            dan dapat berisi banyak baris. Panjang dan banyak baris untuk text area di atur
+            melalui atribut rows dan cols, atau melalui CSS.-->
+            <br/><textarea name="komentar" rows="5" cols="20">
+                    Silahkan diisi sesuai hati anda
+                    </textarea>
+                    <br />
+                    <!-- pada button mulai proses saya menggunakan type submit-->
+                    <input type="submit" value="Tekan ini!" >
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <title>Contoh Kasus Spesifik CSS</title>
+            <!-- kita masukkan selector css ,disini saya memasukkan 5 selector ,ada p,div p,#aaa,body div p,
+            div p.kalimat-->
+        <style type="text/css">
+                p {
+                color:red;
+                }
+                div p {
+                color:green;
+                }
+                #aaa{
+                color:orange;
+                }
+                body div p {
+                color:yellow;
+                }
+                div p.kalimat {
+                color:silver;
+                }
+        </style>
+   </head>
+    <body>
+        <!-- diatas terdapat 5 selector yang ingin mencoba merubah warna paragraf dibawah ini-->
+         <div>
+               <p id="aaa">
+              Dimas Fajrul Falah
+                </p>
+          </div>
+          <!-- dan kita jalankan maka paragraf diatas warna orange dimana #aaa tempat mendefinisikan warna orange
+        dan karena selector #aaa dianggap paling spesifik atau paling detail dari ke-5 selector lainnya.-->
+     </body>
+ </html>
